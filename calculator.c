@@ -13,7 +13,7 @@ int main()
 	printf("***Integer Calculator***\n");
 	do
 	{
-		printf("1. Addition\n2. Subtraction\n0. EXIT\n");
+		printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n0. EXIT\n");
 		scanf("%d", &menu);
 		
 		switch (menu)
@@ -31,6 +31,20 @@ int main()
 				printf("Enter value 2: ");
 				scanf("%d", &b);
 				printf("The difference of %d and %d is %d\n", a, b, subtraction(a, b));
+				break;
+			case 3:
+				printf("Enter value 1: ");
+				scanf("%d", &a);
+				printf("Enter value 2: ");
+				scanf("%d", &b);
+				printf("The product of %d and %d is %d\n", a, b, multiplication(a, b));
+				break;
+			case 4:
+				printf("Enter value 1: ");
+				scanf("%d", &a);
+				printf("Enter value 2: ");
+				scanf("%d", &b);
+				printf("The quotient of %d and %d is %d\n", a, b, division(a, b));
 				break;
 			case 0:
 				menu = 0;
