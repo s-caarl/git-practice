@@ -13,12 +13,10 @@ int main()
 
 int addition(int x, int y)
 {
-	
-	return 0;
+	return x + y;
 }
 
 int subtraction(int x, int y)
 {
-	
-	return 0;
+	return x - y;
 }
