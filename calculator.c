@@ -1,15 +1,16 @@
-//integer calculator
+//four-function calculator
 
 #include <stdio.h>
 
-int addition(int x, int y);
-int subtraction(int x, int y);
-int multiplication(int x, int y);
-int division(int x, int y);
+double addition(double x, double y);
+double subtraction(double x, double y);
+double multiplication(double x, double y);
+double division(double x, double y);
 
 int main()
 {
-	int a, b, menu;
+	double a, b;
+	int menu;
 	printf("***Integer Calculator***\n");
 	do
 	{
@@ -20,31 +21,31 @@ int main()
 		{
 			case 1:
 				printf("Enter value 1: ");
-				scanf("%d", &a);
+				scanf("%lf", &a);
 				printf("Enter value 2: ");
-				scanf("%d", &b);
-				printf("The sum of %d and %d is %d\n", a, b, addition(a, b));
+				scanf("%lf", &b);
+				printf("The sum of %g and %g is %g\n", a, b, addition(a, b));
 				break;
 			case 2:
 				printf("Enter value 1: ");
-				scanf("%d", &a);
+				scanf("%lf", &a);
 				printf("Enter value 2: ");
-				scanf("%d", &b);
-				printf("The difference of %d and %d is %d\n", a, b, subtraction(a, b));
+				scanf("%lf", &b);
+				printf("The difference of %g and %g is %g\n", a, b, subtraction(a, b));
 				break;
 			case 3:
 				printf("Enter value 1: ");
-				scanf("%d", &a);
+				scanf("%lf", &a);
 				printf("Enter value 2: ");
-				scanf("%d", &b);
-				printf("The product of %d and %d is %d\n", a, b, multiplication(a, b));
+				scanf("%lf", &b);
+				printf("The product of %g and %g is %g\n", a, b, multiplication(a, b));
 				break;
 			case 4:
 				printf("Enter value 1: ");
-				scanf("%d", &a);
+				scanf("%lf", &a);
 				printf("Enter value 2: ");
-				scanf("%d", &b);
-				printf("The quotient of %d and %d is %d\n", a, b, division(a, b));
+				scanf("%lf", &b);
+				printf("The quotient of %g and %g is %g\n", a, b, division(a, b));
 				break;
 			case 0:
 				menu = 0;
@@ -59,22 +60,22 @@ int main()
 	return 0;
 }
 
-int addition(int x, int y)
+double addition(double x, double y)
 {
 	return x + y;
 }
 
-int subtraction(int x, int y)
+double subtraction(double x, double y)
 {
 	return x - y;
 }
 
-int multiplication(int x, int y)
+double multiplication(double x, double y)
 {
 	return x * y;
 }
 
-int division(int x, int y)
+double division(double x, double y)
 {
 	return x / y;
 }
